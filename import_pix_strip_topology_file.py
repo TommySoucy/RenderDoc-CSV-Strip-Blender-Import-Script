@@ -30,18 +30,18 @@ from bpy.props import (BoolProperty,
 from collections import OrderedDict
 
 bl_info = {
-    "name": "PIX CSV",
-    "author": "Stanislav Bobovych",
+    "name": "PIX CSV Strip File",
+    "author": "Stanislav Bobovych and Tommy Soucy",
     "version": (1, 0, 0),
     "blender": (2, 7, 8),
     "location": "File > Import-Export",
-    "description": "Import PIX csv dump of mesh. Import mesh, normals and UVs.",
+    "description": "Import PIX csv dump of mesh. Import mesh, normals and UVs. Assuming a Triangle Strip Primitive Topology",
     "category": "Import"}
 
 
 class PIX_CSV_Operator(bpy.types.Operator):
     bl_idname = "object.pix_csv_importer"
-    bl_label = "Import PIX csv"
+    bl_label = "Import PIX csv Strip File"
     filepath = bpy.props.StringProperty(subtype="FILE_PATH")
     filter_glob = StringProperty(default="*.csv", options={'HIDDEN'})
     mirror_x = bpy.props.BoolProperty(name="Mirror X",
@@ -293,7 +293,7 @@ def importCSV(filepath=None, mirror_x=False, vertex_order=True, global_matrix=No
 
 
 def menu_func_import(self, context):
-    self.layout.operator(PIX_CSV_Operator.bl_idname, text="PIX CSV (.csv)")
+    self.layout.operator(PIX_CSV_Operator.bl_idname, text="PIX CSV Strip File (.csv)")
 
 
 def register():

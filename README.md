@@ -25,7 +25,7 @@ I have also included two variants of this modified script:
 
 <dl>
   <dt>_file</dt>
-  <dd>Reads all the data directly from the file. Very slow, but I guess could be needed for extremely big models whose vertices list is just too big to have in memory. I would suggest having the blender console open to make sure it is actaully running. You should see "Processing vertex #(vertex number)" appear in the console for every vertex in the list.</dd>
+  <dd>Reads all the data directly from the file. Very slow, but I guess could be needed for extremely big models whose vertices list is just too big to have in memory. I would suggest having the blender console open to make sure it is actually running. You should see "Processing vertex #(vertex number)" appear in the console for every vertex in the list.</dd>
 
   <dt>_mem</dt>
   <dd>Puts all vertices in memory so any index can be accessed. Alot faster.</dd>

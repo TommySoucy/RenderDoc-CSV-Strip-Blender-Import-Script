@@ -37,4 +37,7 @@ Install into Blender as you would any other plugin.
 
 The import menu will now have a "PIX CSV Strip Mem (.csv)" (or "PIX CSV Strip File (.csv)" depending on the variant you installed) option you can use to import the CSV file.
 
-This works with RenderDoc 1.4 and Blender 2.79 but I would be surprised if it doesn't work with newer versions of Blender and any other versions of RenderDoc.
+Keep in mind that the models imported using this script will have degenerate triangles, triangles that have 0 area. Those are a side effect of triangle strips. I don't know how to clean them up in Blender but I know you can clean them up in Maya using the cleanup function and checking "Faces with zero geometry area" under "Remove Geometry" in the cleanup options.
+I could probably have skipped the 0 area triangles in script but I figured someone might want to keep them and they are relatively easy to deal with anyway.
+
+These scripts works with RenderDoc 1.4 and Blender 2.79 but I would be surprised if it doesn't work with newer versions of Blender and any other versions of RenderDoc.

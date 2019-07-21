@@ -31,7 +31,7 @@ I have also included two variants of this modified script:
   <dd>Puts all vertices in memory so any index can be accessed. Alot faster.</dd>
 </dl>
 
-<strong>Usage:</strong>
+<h2>Usage:</h2>
 
 Install into Blender as you would any other plugin.
 

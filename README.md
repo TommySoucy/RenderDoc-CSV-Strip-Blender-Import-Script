@@ -8,11 +8,11 @@ This topology can be:
 
 <dl>
   <dt>Triangle list</dt>
-  <dd>Every three vertices in the list compose a triangle. See [Triangle List](https://docs.microsoft.com/en-us/windows/win32/direct3d9/triangle-lists)</dd>
+  <dd>Every three vertices in the list compose a triangle. See https://docs.microsoft.com/en-us/windows/win32/direct3d9/triangle-lists</dd>
 
   <dt>Triangle strip</dt>
   <dd>The first three vertices in the list compose a triangle. Every vertex after that makes a new triangle using previous vertices in the list in a specific order.
-	  See [Triangle Strip](https://docs.microsoft.com/en-us/windows/win32/direct3d9/triangle-strips)</dd>
+	  See https://docs.microsoft.com/en-us/windows/win32/direct3d9/triangle-strips</dd>
 </dl>
 
 These scripts are simply a modification of an already existing script that can be found [here.](https://github.com/sbobovyc/GameTools/blob/master/Blender/import_pix.py) 
@@ -31,7 +31,7 @@ I have also included two variants of this modified script:
   <dd>Puts all vertices in memory so any index can be accessed. Alot faster.</dd>
 </dl>
 
-<em>Usage:</em>
+<strong>Usage:</strong>
 
 Install into Blender as you would any other plugin.
 

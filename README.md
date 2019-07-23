@@ -40,4 +40,4 @@ The import menu will now have a "PIX CSV Strip Mem (.csv)" (or "PIX CSV Strip Fi
 Keep in mind that the models imported using this script will have degenerate triangles, triangles that have 0 area. Those are a side effect of triangle strips. I don't know how to clean them up in Blender but I know you can clean them up in Maya using the cleanup function and checking "Faces with zero geometry area" under "Remove Geometry" in the cleanup options.
 I could probably have skipped the 0 area triangles in script but I figured someone might want to keep them and they are relatively easy to deal with anyway.
 
-These scripts works with RenderDoc 1.4 and Blender 2.79 and probably work with newer versions of Blender and any other versions of RenderDoc.
+These scripts work with RenderDoc 1.4 and Blender 2.79 and probably work with newer versions of Blender and any other versions of RenderDoc.
